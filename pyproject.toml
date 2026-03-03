@@ -1,0 +1,17 @@
+[project]
+name = "sentiment-classification"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "bs4>=0.0.2",
+    "fastapi>=0.133.1",
+    "joblib>=1.5.3",
+    "pandas>=3.0.1",
+    "requests>=2.32.5",
+    "scikit-learn>=1.8.0",
+    "selenium>=4.41.0",
+    "uvicorn>=0.41.0",
+    "webdriver-manager>=4.0.2",
+]
