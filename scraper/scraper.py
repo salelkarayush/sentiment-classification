@@ -135,7 +135,8 @@ class FlipkartScraper:
 
 if __name__ == "__main__":
     TARGET_URL = input("Enter the Flipkart product reviews URL: ")
+    target_review_count = int(input("Enter the number of reviews to scrape: "))
     scraper = FlipkartScraper(headless=True)
-    scraper.run(TARGET_URL, target_review_count=10) 
+    scraper.run(TARGET_URL, target_review_count) 
     filename = input("Enter the filename to save the reviews (e.g., reviews.csv): ")
     scraper.save_to_csv(filename)
